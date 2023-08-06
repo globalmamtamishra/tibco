@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Schema_FF="http://www.example.org/Schema_FF" xmlns:dataformat="http://ns.tibco.com/bw/palette/dataformat" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_OxRIkesNEeydg9NxGYUSHQ" name="tasks_bw6.DataFormat_FF" type="dataformat:DataFormat">
+  <imports xmi:id="_mgF4AP0ZEeyrl5KY_CMpbg" importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.example.org/Schema_FF"/>
+  <jndi:configuration xsi:type="dataformat:DataFormat" xmi:id="_OxRIkusNEeydg9NxGYUSHQ" formatType="Delimiter separated" colSeparator="|" colSeparatorParseRule="Treat all characters as entered as a single column separator string" lineSeparator="New Line" fillCharacter="Space" schemaElementQName="Schema_FF:root" fieldOffsetsStr="OrderInfo(0,0)&#xA;CustomerEmail(0,0)&#xA;Brand(0,0)&#xA;ItemID(0,0)&#xA;GiftSku(0,0)&#xA;MaxQuantity(0,0)&#xA;RuleID(0,0)&#xA;InsertCode(0,0)">
+    <fieldOffsets xmi:id="_mgjyEP0ZEeyrl5KY_CMpbg" name="OrderInfo"/>
+    <fieldOffsets xmi:id="_mgjyEf0ZEeyrl5KY_CMpbg" name="CustomerEmail"/>
+    <fieldOffsets xmi:id="_mgjyEv0ZEeyrl5KY_CMpbg" name="Brand"/>
+    <fieldOffsets xmi:id="_mgjyE_0ZEeyrl5KY_CMpbg" name="ItemID"/>
+    <fieldOffsets xmi:id="_mgjyFP0ZEeyrl5KY_CMpbg" name="GiftSku"/>
+    <fieldOffsets xmi:id="_mgjyFf0ZEeyrl5KY_CMpbg" name="MaxQuantity"/>
+    <fieldOffsets xmi:id="_mgjyFv0ZEeyrl5KY_CMpbg" name="RuleID"/>
+    <fieldOffsets xmi:id="_mgjyF_0ZEeyrl5KY_CMpbg" name="InsertCode"/>
+  </jndi:configuration>
+</jndi:namedResource>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/Schema_FF" xmlns:tns="http://www.example.org/Schema_FF" elementFormDefault="qualified">
+
+    <element name="root" type="tns:rootType"></element>
+    
+    <complexType name="rootType">
+    	<sequence>
+    		<element name="OrderInfo" type="string" minOccurs="0"
+    			maxOccurs="1">
+    		</element>
+    		<element name="CustomerEmail" type="string" minOccurs="0"
+    			maxOccurs="1">
+    		</element>
+    		<element name="Brand" type="string" minOccurs="0"
+    			maxOccurs="1">
+    		</element>
+    		<element name="ItemID" type="string" minOccurs="0"
+    			maxOccurs="1">
+    		</element>
+    		<element name="GiftSku" type="string" minOccurs="0"
+    			maxOccurs="1">
+    		</element>
+    		<element name="MaxQuantity" type="string" minOccurs="0" maxOccurs="1"></element>
+    		<element name="RuleID" type="string" minOccurs="0" maxOccurs="1"></element>
+    		<element name="InsertCode" type="string" minOccurs="0" maxOccurs="1"></element>
+    	</sequence>
+    </complexType>
+</schema>

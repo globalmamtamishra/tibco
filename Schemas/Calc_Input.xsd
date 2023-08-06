@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/Cal" xmlns:tns="http://www.example.org/Cal" elementFormDefault="qualified">
+
+    <element name="Input" type="tns:AddType"></element>
+
+    <complexType name="AddType">
+    	<sequence>
+    		<element name="A_value" type="int" minOccurs="0" maxOccurs="1"></element>
+    		<element name="B_value" type="int" minOccurs="0" maxOccurs="1"></element>
+    	</sequence>
+    </complexType>
+</schema>

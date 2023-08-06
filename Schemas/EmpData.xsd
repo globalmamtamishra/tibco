@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/EmpData" xmlns:tns="http://www.example.org/EmpData" elementFormDefault="qualified">
+
+    <element name="EmpData" type="tns:EmpDetails"></element>
+    
+    <complexType name="EmpDetails">
+    	<sequence>
+    		<element name="EmpID" type="int"></element>
+    		<element name="EmpName" type="string"></element>
+    		<element name="Location" type="string"></element>
+    	</sequence>
+    </complexType>
+</schema>

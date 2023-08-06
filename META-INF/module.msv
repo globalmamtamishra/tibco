@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<msv:DocumentRoot xmlns:msv="http://tns.tibco.com/bw/model/core/moduleSV">
+  <moduleSharedVariables>
+    <moduleSharedVariable name="moduleSharedVariable" type="{http://www.example.org/Inc_Var_Schema}NewElement" initialValueMode="literal" initialValue="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;tns:NewElement xmlns:tns=&quot;http://www.example.org/Inc_Var_Schema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;>&#xA;  &lt;tns:NewElement>1&lt;/tns:NewElement>&#xA;&lt;/tns:NewElement>&#xA;" persistenceMode="true"/>
+  </moduleSharedVariables>
+  <import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.example.org/Inc_Var_Schema" location="../Schemas/Inc_Var_Schema.xsd"/>
+</msv:DocumentRoot>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/ReqSchema" xmlns:tns="http://www.example.org/ReqSchema" elementFormDefault="qualified">
+
+    <element name="Input" type="tns:InputType"></element>
+    
+    <complexType name="InputType">
+    	<sequence>
+    		<element name="A" type="int" minOccurs="0" maxOccurs="1"></element>
+    		<element name="B" type="int" minOccurs="0" maxOccurs="1"></element>
+    	</sequence>
+    </complexType>
+</schema>

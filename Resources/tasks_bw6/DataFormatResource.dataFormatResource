@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:EvenOdd_Schema="http://www.example.org/EvenOdd_Schema" xmlns:dataformat="http://ns.tibco.com/bw/palette/dataformat" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_PY3JQTTpEe2Lh7ojWdu9Sg" name="tasks_bw6.DataFormatResource" type="dataformat:DataFormat">
+  <imports xmi:id="_UrVckDT2Ee2FxrajNaiJlA" importType="http://www.w3.org/2001/XMLSchema" location="../../Schemas/EvenOdd_Schema.xsd" namespace="http://www.example.org/EvenOdd_Schema"/>
+  <jndi:configuration xsi:type="dataformat:DataFormat" xmi:id="_PY-eADTpEe2Lh7ojWdu9Sg" formatType="Delimiter separated" colSeparator="\n" colSeparatorParseRule="Treat all characters as entered as a single column separator string" lineSeparator="New Line" fillCharacter="Space" schemaElementQName="EvenOdd_Schema:EO_Schema" fieldOffsetsStr="Numbers(0,0)">
+    <fieldOffsets xmi:id="_UsprMDT2Ee2FxrajNaiJlA" name="Numbers"/>
+  </jndi:configuration>
+</jndi:namedResource>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Rec="http://www.example.org/Rec" xmlns:dataformat="http://ns.tibco.com/bw/palette/dataformat" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_61t9AeViEeycV8a1vqq0yA" name="tasks_bw6.Rec" type="dataformat:DataFormat">
+  <imports xmi:id="_AoRxgOVjEeycV8a1vqq0yA" importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.example.org/Rec"/>
+  <jndi:configuration xsi:type="dataformat:DataFormat" xmi:id="_61t9AuViEeycV8a1vqq0yA" formatType="Delimiter separated" colSeparator="&quot;\n]" colSeparatorParseRule="Treat all characters as entered as a single column separator string" lineSeparator="New Line" fillCharacter="Space" schemaElementQName="Rec:root" lineLength="1" fieldOffsetsStr="param(0,0)">
+    <fieldOffsets xmi:id="_Ao5ckOVjEeycV8a1vqq0yA" name="param"/>
+  </jndi:configuration>
+</jndi:namedResource>

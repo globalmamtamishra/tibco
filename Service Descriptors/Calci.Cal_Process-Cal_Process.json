@@ -1,0 +1,75 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "Cal_Process",
+    "description" : "Cal_Process service"
+  },
+  "host" : "localhost:8080",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/cal_process" : {
+      "post" : {
+        "summary" : "postCal_Process",
+        "description" : "postCal_Process",
+        "operationId" : "post-cal_process",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/Input"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a Output to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/Output"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "Input" : {
+      "type" : "object",
+      "properties" : {
+        "A" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "B" : {
+          "type" : "integer",
+          "format" : "int32"
+        }
+      }
+    },
+    "Output" : {
+      "type" : "object",
+      "properties" : {
+        "Add" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "Sub" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "Mul" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "Div" : {
+          "type" : "number",
+          "format" : "double"
+        }
+      }
+    }
+  }
+}

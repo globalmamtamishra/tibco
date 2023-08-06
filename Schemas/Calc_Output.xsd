@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.example.org/Res" elementFormDefault="qualified" targetNamespace="http://www.example.org/Res">
+
+    <element name="Output" type="tns:Response_Type"/>
+
+    <complexType name="Response_Type">
+    	<sequence>
+    		<element maxOccurs="1" minOccurs="0" name="Add" type="int" />
+    		<element name="Sub" type="int" minOccurs="0"
+    			maxOccurs="1">
+    		</element>
+    		<element name="Mul" type="int" minOccurs="0"
+    			maxOccurs="1">
+    		</element>
+    		<element name="Div" type="double" minOccurs="0" maxOccurs="1"></element>
+    	</sequence>
+    </complexType>
+</schema>

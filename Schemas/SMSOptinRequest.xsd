@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/SMSOptinRequest" xmlns:tns="http://www.example.org/SMSOptinRequest" elementFormDefault="qualified">
+
+    <element name="SMSOptinRequest" type="tns:SMSOptinRequestType"></element>
+    
+    <complexType name="SMSOptinRequestType">
+    	<sequence>
+    		<element name="order_preferences"
+    			type="tns:order_preferences_Type" minOccurs="0" maxOccurs="1">
+    		</element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="order_preferences_Type">
+    	<sequence>
+    		<element name="last_name" type="string" minOccurs="0"
+    			maxOccurs="1">
+    		</element>
+    		<element name="first_name" type="string" minOccurs="0"
+    			maxOccurs="1">
+    		</element>
+    		<element name="is_guest" type="string" minOccurs="0"
+    			maxOccurs="1">
+    		</element>
+    		<element name="order_id" type="string" minOccurs="0"
+    			maxOccurs="1">
+    		</element>
+    		<element name="notification_pref_details"
+    			type="tns:notification_pref_details_Type" minOccurs="0"
+    			maxOccurs="unbounded">
+    		</element>
+    		<element name="traffic_source" type="string" minOccurs="0" maxOccurs="1"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="notification_pref_details_Type">
+    	<sequence>
+    		<element name="channel" type="string" minOccurs="0"
+    			maxOccurs="1">
+    		</element>
+    		<element name="contact" type="string" minOccurs="0" maxOccurs="1"></element>
+    	</sequence>
+    </complexType>
+</schema>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/Rec" xmlns:tns="http://www.example.org/Rec" elementFormDefault="qualified">
+
+    <element name="root" type="tns:rootType"></element>
+
+    <complexType name="rootType">
+    	<sequence>
+    		<element name="param" type="string" minOccurs="0" maxOccurs="1"></element>
+    	</sequence>
+    </complexType>
+</schema>

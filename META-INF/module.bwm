@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_ZmipQPuFEeyEcLGBBQaRUA" targetNamespace="http://tns.tibco.com/bw/composite/Tasks_BW6" name="Tasks_BW6" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_8fzRsPuGEeyEcLGBBQaRUA" name="cal_process" promote="ComponentCal_Process/cal_process">
+    <sca:interface.wsdl xmi:id="_8f4KMPuGEeyEcLGBBQaRUA" interface="http://xmlns.example.com/20220704161914PLT#wsdl.interface(cal_process)" scaext:wsdlLocation="../Processes/Calci/Cal_Process.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_8gRLwPuGEeyEcLGBBQaRUA" name="RestService" path="/cal_process" docBasePath="http://localhost:7777/Tasks_BW6" docResourcePath="Cal_Process" basePath="/" connector="tasks_bw6.Cal_Process" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/Calci.Cal_Process-Cal_Process.json">
+      <operation xmi:id="_8gZuoPuGEeyEcLGBBQaRUA" operationName="post" nickname="post-cal_process" httpMethod="POST" notes="postCal_Process" responseStyle="element" requestStyle="element" outputPartName="Response">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <advancedConfig xmi:id="_8gToAPuGEeyEcLGBBQaRUA" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_8gZuofuGEeyEcLGBBQaRUA" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_aeaFYPuFEeyEcLGBBQaRUA" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_aem5sPuFEeyEcLGBBQaRUA" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_aeryMPuFEeyEcLGBBQaRUA" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_aewqsPuFEeyEcLGBBQaRUA" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_ae1jMPuFEeyEcLGBBQaRUA" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_ae5NkPuFEeyEcLGBBQaRUA" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_ae838PuFEeyEcLGBBQaRUA" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_afBwcPuFEeyEcLGBBQaRUA" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_afFa0PuFEeyEcLGBBQaRUA" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_8foSkPuGEeyEcLGBBQaRUA" name="ComponentCal_Process" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_8foSkfuGEeyEcLGBBQaRUA" processName="Calci.Cal_Process" autoStart="false"/>
+    <sca:service xmi:id="_8fvnUPuGEeyEcLGBBQaRUA" name="cal_process">
+      <sca:interface.wsdl xmi:id="_8fw1cPuGEeyEcLGBBQaRUA" interface="http://xmlns.example.com/20220704161914PLT#wsdl.interface(cal_process)" scaext:wsdlLocation="../Processes/Calci/Cal_Process.bwp"/>
+    </sca:service>
+  </sca:component>
+  <sca:component xmi:id="_k0Hv8AGvEe2LzvgsLMevUQ" name="ComponentFiles" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_k0Hv8QGvEe2LzvgsLMevUQ" processName="File.CopyFiles1" autoStart="false"/>
+  </sca:component>
+  <sca:component xmi:id="_dTb68AKaEe2oUYLf-7xRIA" name="ComponentFiles2" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_dTb68QKaEe2oUYLf-7xRIA" processName="File.CopyFiles2" autoStart="false"/>
+  </sca:component>
+  <sca:component xmi:id="_ssnAIANlEe2tfP-wL0ZatA" name="ComponentIncr_Nos" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_ssnAIQNlEe2tfP-wL0ZatA" processName="Increase_Nos.Incr_Nos" autoStart="false"/>
+  </sca:component>
+  <sca:component xmi:id="_ZBa7wDTlEe2Lh7ojWdu9Sg" name="ComponentJDBC" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_ZBa7wTTlEe2Lh7ojWdu9Sg" processName="JDBC.Insert_RecDirect_DB" autoStart="false"/>
+  </sca:component>
+  <sca:component xmi:id="_wYdMQDToEe2Lh7ojWdu9Sg" name="ComponentCalPro_CreateFile" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_wYdMQTToEe2Lh7ojWdu9Sg" processName="File.CalPro_CreateFile" autoStart="false"/>
+  </sca:component>
+  <sca:component xmi:id="_hYZagDT1Ee2FxrajNaiJlA" name="ComponentEven_Odd1" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_hYZagTT1Ee2FxrajNaiJlA" processName="Assigns.Even_Odd"/>
+  </sca:component>
+  <sca:component xmi:id="_ZeUYgDT4Ee2FxrajNaiJlA" name="ComponentFlatFile_to_XML1" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_ZeUYgTT4Ee2FxrajNaiJlA" processName="Assigns.FlatFile_to_XML" autoStart="false"/>
+  </sca:component>
+  <sca:component xmi:id="__KaU8DT5Ee2FxrajNaiJlA" name="ComponentCon_Records_to_XML1" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="__KaU8TT5Ee2FxrajNaiJlA" processName="Assigns.Con_Records_to_XML"/>
+  </sca:component>
+</sca:composite>

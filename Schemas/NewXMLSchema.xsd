@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://www.example.org/SMSOptinRequest" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.example.org/SMSOptinRequest" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="SMSOptinRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="order_preferences">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="last_name" />
+              <xs:element name="first_name" />
+              <xs:element name="is_guest" />
+              <xs:element name="notification_pref_details">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="channel" />
+                    <xs:element name="contact" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="traffic_source" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
